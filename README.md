@@ -24,15 +24,15 @@ Below are the indexes that lists the tools available as per their work areas.
   - [Source Control Management](#source-control-management)
 ---
 ## API Gateway
-- [Ambassador](https://www.getambassador.io/) 
-- [API Umbrella](https://apiumbrella.io/#) 
-- [Cilium](https://github.com/cilium/cilium) 
-- [Envoy](https://www.envoyproxy.io/) 
-- [Gloo](https://github.com/solo)
-- [Kong](https://konghq.com/) 
-- [Nginx](https://nginx.org/)
-- [Traefik](https://traefik.io/) 
-- [Tyk](https://tyk.io/) 
+- [Ambassador](https://www.getambassador.io/) - Ambassador is an API Gateway for cloud-native applications that routes traffic between heterogeneous services and maintains decentralized workflows.
+- [API Umbrella](https://apiumbrella.io/#) - API Umbrella is a proxy that sits in front of your APIs.
+- [Cilium](https://github.com/cilium/cilium) - Cilium is open source software for providing and transparently securing network connectivity and loadbalancing between application workloads.
+- [Envoy](https://www.envoyproxy.io/) - Envoy is an open source edge and service proxy, designed for cloud-native applications.
+- [Gloo](https://www.gloo.us/) - Gloo Mesh is an enhanced Envoy Proxy API gateway for Kubernetes (K8s) Ingress to secure microservices application traffic at the edge.
+- [Kong](https://konghq.com/) - Kong is Orchestration Microservice API Gateway. Kong is a Lua application running in Nginx and made possible by the lua-nginx-module.
+- [Nginx](https://nginx.org/) - The NGINX Plus API gateway authenticates API calls, routes requests to appropriate backends, applies rate limits to prevent overloading services and to mitigate DDoS attacks, offloads SSL/TLS traffic to improve performance, and handles errors and exceptions.
+- [Traefik](https://traefik.io/) - Traefik exposes a number of information through an API handler, such as the configuration of all routers, services, middlewares, etc.
+- [Tyk](https://tyk.io/) - Performant and secure, Tyk API management offers a secure API gateway for your API and microservices.
 ---
 ## Automation Platforms
 - [Ansible](https://www.ansible.com/) 
