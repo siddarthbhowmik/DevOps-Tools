@@ -35,29 +35,29 @@ Below are the indexes that lists the tools available as per their work areas.
 - [Tyk](https://tyk.io/) - Performant and secure, Tyk API management offers a secure API gateway for your API and microservices.
 ---
 ## Automation Platforms
-- [Ansible](https://www.ansible.com/) 
-- [Atlantis](https://github.com/runatlantis/atlantis) 
-- [Bosh](https://www.cloudfoundry.org/bosh/) 
-- [Capistrano](https://capistranorb.com/) 
-- [Chef](https://www.chef.io/) 
-- [Cloudify](https://cloudify.co/) 
-- [Fabric](http://www.fabfile.org/) 
-- [Foreman](https://theforeman.org/) 
-- [Ignite](https://github.com/weaveworks/ignite)  
-- [Juju](https://jaas.ai/) 
-- [ManageIQ](https://www.manageiq.org/) 
-- [Marathon](https://mesosphere.github.io/marathon/) 
-- [Mina](http://nadarei.co/mina/) 
-- [Nomad](https://learn.hashicorp.com/nomad) 
-- [OctoDNS](https://github.com/github/octodns) 
-- [Packer](https://www.packer.io/) 
-- [Puppet](https://puppet.com/) 
-- [Rundeck](https://www.rundeck.com/) 
-- [Salt](https://www.saltstack.com/) 
-- [StackStorm](https://stackstorm.com/) 
-- [Terraform](https://www.terraform.io/) 
-- [Tsuru](https://tsuru.io/) 
-- [Vagrant](https://www.vagrantup.com/) 
+- [Ansible](https://www.ansible.com/) - Ansible is an open-source software provisioning, configuration management, and application-deployment tool enabling infrastructure as code.
+- [Atlantis](https://www.runatlantis.io/) - Atlantis is an open source tool that allows safe collaboration on Terraform projects by making sure that proposed changes are reviewed and that the proposed change is the actual change which will be executed on your infrastructure.
+- [Bosh](https://bosh.io/docs/) - BOSH is a project that unifies release engineering, deployment, and lifecycle management of small and large-scale cloud software.
+- [Capistrano](https://capistranorb.com/) - Capistrano is a remote server automation tool.
+- [Chef](https://www.chef.io/) - Chef is a company and the name of a configuration management tool written in Ruby and Erlang.
+- [Cloudify](https://cloudify.co/) - Cloudify is an open source application and network services orchestration framework based on TOSCA, for award winning edge networking.
+- [Fabric](http://www.fabfile.org/) - Fabric is a Python (2.5-2.7) library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks.
+- [Foreman](https://theforeman.org/) - Foreman is an open source complete life cycle systems management tool for provisioning, configuring and monitoring of physical and virtual servers.
+- [Ignite](https://github.com/weaveworks/ignite) - Apache Ignite exposes metrics in JMX and OpenCensus formats, making it possible to monitor the clusters using a broad range of tools.
+- [Juju](https://jaas.ai/) - Juju enables you to encapsulate each different part of your infrastructure and lets everything talk to each other.
+- [ManageIQ](https://www.manageiq.org/) - Continuous Discovery. Connect ManageIQ to your virtualization, container, network, and storage management systems, where it will discover inventory, map relationships, and listen for changes.
+- [Marathon](https://mesosphere.github.io/marathon/) - Marathon is a production-grade container orchestration platform for Mesosphere's Datacenter Operating System (DC/OS) and Apache Mesos.
+- [Mina](http://nadarei.co/mina/) - Mina lets you build and run scripts to manage your app deployments on servers via SSH.
+- [Nomad](https://learn.hashicorp.com/nomad) - Nomad is a flexible workload orchestrator that enables an organization to easily deploy and manage any containerized or legacy application using a single, unified workflow.
+- [OctoDNS](https://github.com/github/octodns) - OctoDNS provides a set of tools & patterns that make it easy to manage your DNS records across multiple providers.
+- [Packer](https://www.packer.io/) - Packer is a free and open source tool for creating golden images for multiple platforms from a single source configuration.
+- [Puppet](https://puppet.com/) - Puppet is a software configuration management tool which includes its own declarative language to describe system configuration.
+- [Rundeck](https://www.rundeck.com/) - Rundeck is an open-source tool that helps to define build, deploy and manage automation.
+- [Salt](https://www.saltstack.com/) - Salt platform or SaltStack is a Python-based open source configuration management and remote execution application.
+- [StackStorm](https://stackstorm.com/) - StackStorm connects all your apps, services, and workflows.
+- [Terraform](https://www.terraform.io/) - Terraform is an infrastructure as code (IaC) tool that allows you to build, change, and version infrastructure safely and efficiently.
+- [Tsuru](https://tsuru.io/) - Tsuru is an extensible and open source Platform as a Service (Paas) that uses Docker to make deploys simple and fast.
+- [Vagrant](https://www.vagrantup.com/) - Vagrant is a tool for building and managing virtual machine environments in a single workflow.
 ---
 ## Cloud Platforms
 - [Alibaba Cloud](https://us.alibabacloud.com/) 
