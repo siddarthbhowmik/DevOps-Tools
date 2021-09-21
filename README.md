@@ -184,25 +184,24 @@ kernel runs on every machine and provides applications with API’s for resource
 - [Zabbix](https://www.zabbix.com/) 
 ---
 ## Operating Systems
-- [Atomic](http://www.projectatomic.io/) 
-- [CentOS](https://www.centos.org/)
-- [CoreOS](http://coreos.com/) 
-- [OSv](http://osv.io/) 
-- [Photon](https://github.com/vmware/photon)
-- [Rancher OS](https://rancher.com/rancher-os) 
-- [Ubuntu](https://ubuntu.com/)
+- [CentOS](https://www.centos.org/) - The CentOS Project is a community-driven free software effort focused on delivering a robust open source ecosystem around a Linux platform.
+- [CoreOS](http://coreos.com/) - Fedora CoreOS is a new Fedora Edition built specifically for running containerized workloads securely and at scale.
+- [OSv](http://osv.io/) - OSv is the versatile modular unikernel designed to run unmodified Linux applications securely on micro-VMs in the cloud.
+- [Photon](https://github.com/vmware/photon) - Photon OS™ is an open source Linux container host optimized for cloud-native applications, cloud platforms, and VMware infrastructure.
+- [Rancher OS](https://rancher.com/rancher-os) - Rancher, the open-source multi-cluster orchestration platform, lets operations teams deploy, manage and secure enterprise Kubernetes.
+- [Ubuntu](https://ubuntu.com/) - Ubuntu is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT.
 ---
 ## Programming Languages
-- [Python](https://www.python.org/)
-- [Ruby](https://www.ruby-lang.org/)
-- [Go](https://golang.org/)
+- [Python](https://www.python.org/) - Python is commonly used for developing websites and software, task automation, data analysis, and data visualization.
+- [Ruby](https://www.ruby-lang.org/) - Ruby is most used for building web applications. However, it is a general-purpose language similar to Python, so it has many other applications like data analysis, prototyping, and proof of concepts.
+- [Go](https://golang.org/) - Go or GoLang, as it is called, is a robust system-level language used for programming across large-scale network servers and big distributed systems.
 ---
 ## Source Control Management
-- [Bitbucket](https://bitbucket.org/product/) 
-- [Gitblit](https://github.com/gitblit/gitblit)
-- [Gitea](https://gitea.io/) 
-- [Github](https://github.com/) 
-- [Gitlab](https://gitlab.com/) 
-- [Gogs](https://gogs.io/) 
-- [Phabricator](https://github.com/phacility/phabricator/) 
+- [Bitbucket](https://bitbucket.org/product/) - Bitbucket Cloud is a Git based code hosting and collaboration tool, built for teams. Bitbucket's best-in-class Jira and Trello integrations are designed to bring the entire software team together to execute on a project.
+- [Gitblit](https://github.com/gitblit/gitblit) - Gitblit is an open source, pure Java Git solution for managing, viewing, and serving Git repositories. It can serve repositories over the GIT, HTTP, and SSH transports; it can authenticate against multiple providers; and it allows you to get up-and-running with an attractive, capable Git server in less than 5 minutes.
+- [Gitea](https://gitea.io/) - Gitea is a community managed lightweight code hosting solution written in Go.
+- [Github](https://github.com/) - GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface.
+- [Gitlab](https://gitlab.com/) - GitLab is a management platform for Git repositories that provides integrated features like continuous integration, issue tracking, team support, and wiki documentation.
+- [Gogs](https://gogs.io/) - Gogs is a lightweight Git server written in Go which is designed to be simple to set up and operate and can be run on just about anything.
+- [Phabricator](https://github.com/phacility/phabricator/) - Phabricator is a complete set of tools for developing software. Included apps help you manage tasks and sprints, review code, host git, svn, or mercurial repositories, build with continuous integration, review designs, discuss in internal chat channels, and much more.
 ---
