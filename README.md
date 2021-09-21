@@ -60,25 +60,26 @@ Below are the indexes that lists the tools available as per their work areas.
 - [Vagrant](https://www.vagrantup.com/) - Vagrant is a tool for building and managing virtual machine environments in a single workflow.
 ---
 ## Cloud Platforms
-- [Alibaba Cloud](https://us.alibabacloud.com/) 
-- [Amazon Web Services (AWS)](https://aws.amazon.com/) 
-- [Apache CloudStack](https://cloudstack.apache.org/) 
-- [Apache Mesos](http://mesos.apache.org/) 
-- [Azure](https://azure.microsoft.com/) 
-- [DC/OS](https://dcos.io/) 
-- [DigitalOcean](https://www.digitalocean.com/) 
-- [Eucalyptus](https://www.eucalyptus.cloud/) 
-- [Google Cloud Platform (GCP)](https://cloud.google.com/) 
-- [IBM Cloud](https://www.ibm.com/cloud) 
-- [Linode](https://www.linode.com/) 
-- [Localstack](https://github.com/localstack/localstack) 
-- [OpenNebula](https://opennebula.org/) 
-- [Openstack](https://www.openstack.org/) 
-- [Oracle Cloud](https://www.oracle.com/cloud/) 
-- [Scaleway](https://www.scaleway.com/) 
-- [Stackpath](https://www.stackpath.com/) 
-- [VMware Cloud](https://cloud.vmware.com/) 
-- [Vultr](https://www.vultr.com/) 
+- [Alibaba Cloud](https://us.alibabacloud.com/) - Alibaba Cloud, founded in 2009, is a global leader in cloud computing and artificial intelligence, providing services to thousands of enterprises, developers, and governments organizations in more than 200 countries and regions.
+- [Amazon Web Services (AWS)](https://aws.amazon.com/) - Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally.
+- [Apache CloudStack](https://cloudstack.apache.org/) - Apache CloudStack is open source software designed to deploy and manage large networks of virtual machines, as a highly available, highly scalable Infrastructure as a Service (IaaS) cloud computing platform.
+- [Apache Mesos](http://mesos.apache.org/) - Mesos is built using the same principles as the Linux kernel, only at a different level of abstraction. The Mesos
+kernel runs on every machine and provides applications with API’s for resource management and scheduling across entire datacenter and cloud environments.
+- [Azure](https://azure.microsoft.com/) - The Azure cloud platform is more than 200 products and cloud services designed to help you bring new solutions to life—to solve today’s challenges and create the future. Build, run, and manage applications across multiple clouds, on-premises, and at the edge, with the tools and frameworks of your choice.
+- [DC/OS](https://dcos.io/) - DC/OS (the Distributed Cloud Operating System) is an open-source, distributed operating system based on the Apache Mesos distributed systems kernel.
+- [DigitalOcean](https://www.digitalocean.com/) - DigitalOcean provides an inexpensive and easy-to-use cloud service that provides basic services in a well-designed environment.
+- [Eucalyptus](https://www.eucalyptus.cloud/) - Eucalyptus is open source software for building AWS-compatible private and hybrid clouds.
+- [Google Cloud Platform (GCP)](https://cloud.google.com/) - The Google Cloud Platform (GCP) is a platform that delivers over 90 information technology services (aka products), which businesses, IT professionals, and developers can leverage to work more efficiently, gain more flexibility, and/or enable a strategic advantage.
+- [IBM Cloud](https://www.ibm.com/cloud) - IBM Cloud offers the most open and secure public cloud for business with a next-generation hybrid cloud platform, advanced data and AI capabilities, and deep enterprise expertise across 20 industries.
+- [Linode](https://www.linode.com/) - Easily deploy cloud compute, storage, and networking in seconds with a full-featured API, CLI, and Cloud Manager user-friendly interface.
+- [Localstack](https://github.com/localstack/localstack) - A fully functional local cloud stack. Develop and test your cloud and serverless apps offline
+- [OpenNebula](https://opennebula.org/) - OpenNebula is a powerful, but easy-to-use, open source platform to build and manage Enterprise Clouds.
+- [Openstack](https://www.openstack.org/) - OpenStack is an open source cloud computing infrastructure software project and is one of the three most active open source projects in the world.
+- [Oracle Cloud](https://www.oracle.com/cloud/) - Oracle Cloud Infrastructure (OCI) is a deep and broad platform of public cloud services that enables customers to build and run a wide range of applications in a scalable, secure, highly available, and high-performance environment.
+- [Scaleway](https://www.scaleway.com/) - Scaleway is a high quality hosting and data storage company.  They use cloud based technology to help provide great user experiences for all their customers.
+- [Stackpath](https://www.stackpath.com/) - StackPath is a cloud computing and services provider that puts its locations in densely populated markets.
+- [VMware Cloud](https://cloud.vmware.com/) - VMware Cloud delivers a new model of cloud operations. Create a more efficient and automated data center, along with hybrid operations that leverage the same tools, processes, skills and teams to multiple public clouds and the edge.
+- [Vultr](https://www.vultr.com/) - Vultr, founded in 2014, is on a mission to empower developers and businesses by simplifying the deployment of infrastructure via its advanced cloud platform.
 ---
 ## Containers Platforms
 - [AppScale](https://github.com/AppScale/appscale) 
