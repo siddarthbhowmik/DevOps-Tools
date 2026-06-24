@@ -14,11 +14,20 @@ DevOps is the practice of operations and development engineers participating tog
 
 ### DevOps Workflow
 
-![DevOps Lifecycle](./images/devops-lifecycle.svg)
+The DevOps workflow is a continuous cycle:
+**Plan → Code → Build → Test → Release → Deploy → Operate → Monitor → Feedback**
 
 ### Tool Categories & DevOps Stack
 
-![DevOps Ecosystem](./images/devops-ecosystem.svg)
+DevOps tools are organized into key categories:
+- **Source Control**: GitHub, GitLab, Gitea
+- **CI/CD Pipeline**: Jenkins, GitLab CI, GitHub Actions
+- **Infrastructure as Code**: Terraform, Pulumi, Ansible
+- **Containerization**: Docker, Podman, Buildah
+- **Orchestration**: Kubernetes, Nomad, K3S
+- **Monitoring & Observability**: Prometheus, Grafana, ELK
+- **Security & Compliance**: Vault, Snyk, Trivy
+- **Cost Management**: Kubecost, Infracost
 
 ---
 
@@ -138,7 +147,14 @@ graph TB
 
 ### Container & Kubernetes Ecosystem
 
-![Kubernetes Stack](./images/kubernetes-stack.svg)
+Kubernetes cluster consists of multiple components working together:
+- **Container Runtime**: containerd, Docker, Podman, CRI-O
+- **Image Build**: Docker, Buildah, Skaffold, Kaniko
+- **Registry**: Harbor, Quay, Chainguard Images
+- **Distributions**: K3S, Rancher, OpenShift
+- **Networking**: Cilium, Calico, Flannel
+- **Observability**: Prometheus, Loki, Tempo, Jaeger
+- **Service Mesh**: Istio, Linkerd, Kuma
 
 | Tool | Description | Type | Purpose |
 |------|-------------|------|---------|
@@ -180,7 +196,8 @@ graph TB
 
 ### CI/CD Pipeline Architecture
 
-![CI/CD Pipeline](./images/cicd-pipeline.svg)
+The CI/CD pipeline follows this flow:
+**Developer Commits → SCM → Build → Test → Artifact Registry → Deploy → Staging → Production → Monitor & Feedback**
 
 | Tool | Description | Type | Best For |
 |------|-------------|------|----------|
@@ -282,7 +299,12 @@ graph TB
 
 ### Observability Stack
 
-![Observability Stack](./images/observability-stack.svg)
+The three pillars of observability work together for complete visibility:
+- **Metrics**: Prometheus, InfluxData, Datadog, New Relic
+- **Logs**: ELK Stack, Grafana Loki, Graylog, Splunk
+- **Traces**: Jaeger, Grafana Tempo, Datadog, OpenTelemetry
+
+These are then visualized and alerted through Grafana, Kibana, and incident management tools.
 
 | Tool | Description | Type | Category |
 |------|-------------|------|----------|
@@ -345,7 +367,11 @@ graph TB
 
 ### DevSecOps Pipeline & Security Stack
 
-![DevSecOps Pipeline](./images/devsecops-pipeline.svg)
+DevSecOps spans the entire software development lifecycle with multiple security layers:
+- **Development**: SAST (SonarQube, Checkov), Dependency scanning, Secrets detection
+- **Build & Push**: Container scanning, Image signing & verification, SBOM generation
+- **Deployment**: IaC scanning, Policy as Code, Network security
+- **Runtime**: Container runtime security, Secrets management, Anomaly detection, Threat response
 
 | Tool | Description | Type | Focus Area |
 |------|-------------|------|------------|
