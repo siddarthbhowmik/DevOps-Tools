@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="600" y="30" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">DevOps Lifecycle</text>
+
+  <!-- Circular flow -->
+  <circle cx="600" cy="200" r="140" fill="none" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Stages -->
+  <!-- Plan -->
+  <circle cx="200" cy="100" r="40" fill="#4CAF50" opacity="0.9"/>
+  <text x="200" y="105" font-size="16" font-weight="bold" text-anchor="middle" fill="white">📋</text>
+  <text x="200" y="150" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Plan</text>
+
+  <!-- Code -->
+  <circle cx="400" cy="60" r="40" fill="#2196F3" opacity="0.9"/>
+  <text x="400" y="65" font-size="16" font-weight="bold" text-anchor="middle" fill="white">💻</text>
+  <text x="400" y="110" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Code</text>
+
+  <!-- Build -->
+  <circle cx="600" cy="60" r="40" fill="#FF9800" opacity="0.9"/>
+  <text x="600" y="65" font-size="16" font-weight="bold" text-anchor="middle" fill="white">🔨</text>
+  <text x="600" y="110" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Build</text>
+
+  <!-- Test -->
+  <circle cx="800" cy="100" r="40" fill="#9C27B0" opacity="0.9"/>
+  <text x="800" y="105" font-size="16" font-weight="bold" text-anchor="middle" fill="white">✅</text>
+  <text x="800" y="150" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Test</text>
+
+  <!-- Release -->
+  <circle cx="950" cy="200" r="40" fill="#E91E63" opacity="0.9"/>
+  <text x="950" y="205" font-size="16" font-weight="bold" text-anchor="middle" fill="white">📦</text>
+  <text x="950" y="250" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Release</text>
+
+  <!-- Deploy -->
+  <circle cx="800" cy="300" r="40" fill="#00BCD4" opacity="0.9"/>
+  <text x="800" y="305" font-size="16" font-weight="bold" text-anchor="middle" fill="white">🚀</text>
+  <text x="800" y="350" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Deploy</text>
+
+  <!-- Operate -->
+  <circle cx="600" cy="340" r="40" fill="#673AB7" opacity="0.9"/>
+  <text x="600" y="345" font-size="16" font-weight="bold" text-anchor="middle" fill="white">⚙️</text>
+  <text x="600" y="390" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Operate</text>
+
+  <!-- Monitor -->
+  <circle cx="400" cy="300" r="40" fill="#FFEB3B" opacity="0.9"/>
+  <text x="400" y="305" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">📊</text>
+  <text x="400" y="350" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Monitor</text>
+
+  <!-- Feedback loop -->
+  <circle cx="200" cy="200" r="40" fill="#FF5722" opacity="0.9"/>
+  <text x="200" y="205" font-size="16" font-weight="bold" text-anchor="middle" fill="white">💡</text>
+  <text x="200" y="250" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Feedback</text>
+
+  <!-- Arrows between stages -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Arrow from Plan to Code -->
+  <path d="M 240 85 L 360 75" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Code to Build -->
+  <path d="M 440 60 L 560 60" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Build to Test -->
+  <path d="M 640 75 L 760 100" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Test to Release -->
+  <path d="M 830 130 L 920 170" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Release to Deploy -->
+  <path d="M 920 240 L 830 260" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Deploy to Operate -->
+  <path d="M 760 320 L 640 340" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Operate to Monitor -->
+  <path d="M 560 340 L 440 320" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Monitor to Feedback -->
+  <path d="M 360 300 L 240 240" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow from Feedback to Plan -->
+  <path d="M 200 160 L 200 140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+</svg>

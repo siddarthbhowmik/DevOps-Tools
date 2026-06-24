@@ -14,52 +14,11 @@ DevOps is the practice of operations and development engineers participating tog
 
 ### DevOps Workflow
 
-```mermaid
-graph LR
-    A[Plan] --> B[Code]
-    B --> C[Build]
-    C --> D[Test]
-    D --> E[Release]
-    E --> F[Deploy]
-    F --> G[Operate]
-    G --> H[Monitor]
-    H --> A
-    
-    style A fill:#e1f5ff
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#f1f8e9
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
-    style G fill:#ede7f6
-    style H fill:#fff9c4
-```
+![DevOps Lifecycle](./images/devops-lifecycle.svg)
 
 ### Tool Categories & DevOps Stack
 
-```mermaid
-graph TD
-    DevOps["DevOps Ecosystem"]
-    
-    DevOps --> SCM["Source Control<br/>GitHub, GitLab, Gitea"]
-    DevOps --> CI["CI/CD Pipeline<br/>Jenkins, GitLab CI, GitHub Actions"]
-    DevOps --> IaC["Infrastructure as Code<br/>Terraform, Pulumi, Ansible"]
-    DevOps --> Container["Containerization<br/>Docker, Podman, Buildah"]
-    DevOps --> Orchestration["Orchestration<br/>Kubernetes, Nomad, K3S"]
-    DevOps --> Monitor["Monitoring & Observability<br/>Prometheus, Grafana, ELK"]
-    DevOps --> Security["Security & Compliance<br/>Vault, Snyk, Trivy"]
-    DevOps --> Cost["Cost Management<br/>Kubecost, Infracost"]
-    
-    style DevOps fill:#4CAF50,color:#fff
-    style SCM fill:#2196F3,color:#fff
-    style CI fill:#FF9800,color:#fff
-    style IaC fill:#9C27B0,color:#fff
-    style Container fill:#00BCD4,color:#fff
-    style Orchestration fill:#F44336,color:#fff
-    style Monitor fill:#FFEB3B,color:#000
-    style Security fill:#E91E63,color:#fff
-    style Cost fill:#673AB7,color:#fff
-```
+![DevOps Ecosystem](./images/devops-ecosystem.svg)
 
 ---
 
@@ -69,56 +28,18 @@ Below are the indexes that list the tools available as per their work areas.
 
 ### Tool Deployment Models
 
-```mermaid
-graph TB
-    Tools["DevOps Tools"]
-    
-    Tools --> Cloud["Cloud-Managed"]
-    Cloud --> CM1["GitHub, GitLab<br/>CircleCI, Datadog"]
-    
-    Tools --> SelfHosted["Self-Hosted"]
-    SelfHosted --> SH1["Jenkins, Grafana<br/>Prometheus, Gitea"]
-    
-    Tools --> Hybrid["Hybrid/Both"]
-    Hybrid --> H1["Gitlab CI, Jira<br/>Splunk, New Relic"]
-    
-    Tools --> OpenSource["Open Source"]
-    OpenSource --> OS1["Kubernetes, Docker<br/>Prometheus, Grafana"]
-    
-    style Tools fill:#4CAF50,color:#fff
-    style Cloud fill:#2196F3,color:#fff
-    style SelfHosted fill:#FF9800,color:#fff
-    style Hybrid fill:#9C27B0,color:#fff
-    style OpenSource fill:#00BCD4,color:#fff
-```
+The tools are categorized by their deployment and licensing models to help you choose the right fit:
 
-- [Contents](#contents)
-  - [API Gateway](#api-gateway)
-  - [Automation Platforms](#automation-platforms)
-  - [Cloud Platforms](#cloud-platforms)
-  - [Containers Platforms](#containers-platforms)
-  - [Continuous Integration and Delivery](#continuous-integration-and-delivery)
-  - [FinOps & Cost Management](#finops--cost-management)
-  - [GitOps & Progressive Delivery](#gitops--progressive-delivery)
-  - [Incident Management](#incident-management)
-  - [Internal Developer Platforms](#internal-developer-platforms)
-  - [Messaging Queue](#messaging-queue)
-  - [Monitoring & Observability](#monitoring--observability)
-  - [Operating Systems](#operating-systems)
-  - [Programming Languages](#programming-languages)
-  - [Security & Compliance (DevSecOps)](#security--compliance-devsecops)
-  - [Service Mesh & Networking](#service-mesh--networking)
-  - [Source Control Management](#source-control-management)
-
----
-
-## Contents
+- **Cloud-Managed**: Fully hosted solutions with automatic updates (GitHub, GitLab, CircleCI)
+- **Self-Hosted**: Run on your own infrastructure for maximum control (Jenkins, Grafana, Prometheus)
+- **Hybrid**: Available in both cloud and self-hosted options (Gitlab CI, New Relic, Splunk)
+- **Open Source**: Free to use and modify (Kubernetes, Docker, Prometheus, Grafana)
 
 
 
 ## API Gateway
 
-| Tool | Description | Type | Status |
+| 🔗 Tool | Description | Type | Status |
 |------|-------------|------|--------|
 | [Ambassador](https://www.getambassador.io/) | API Gateway for cloud-native applications that routes traffic between heterogeneous services | Commercial | Active |
 | [API Umbrella](https://apiumbrella.io/#) | Proxy that sits in front of your APIs | Open Source | Active |
@@ -162,7 +83,7 @@ graph TB
     style State fill:#E91E63,color:#fff
 ```
 
-| Tool | Description | Type | Best For |
+| 🛠️ Tool | Description | Type | Best For |
 |------|-------------|------|----------|
 | [Ansible](https://www.ansible.com/) | Open-source provisioning, configuration management, and application-deployment tool | Open Source | Agentless automation |
 | [Atlantis](https://www.runatlantis.io/) | Open source tool for safe collaboration on Terraform projects with review workflows | Open Source | Terraform governance |
@@ -192,7 +113,7 @@ graph TB
 
 ## Cloud Platforms
 
-| Provider | Description | Type | Coverage |
+| ☁️ Provider | Description | Type | Coverage |
 |----------|-------------|------|----------|
 | [Alibaba Cloud](https://us.alibabacloud.com/) | Global leader in cloud computing and AI with services in 200+ countries | Commercial | Asia-Pacific focus |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Most comprehensive cloud platform with 200+ fully featured services | Commercial | Global |
@@ -217,29 +138,9 @@ graph TB
 
 ### Container & Kubernetes Ecosystem
 
-```mermaid
-graph TB
-    K8s["Kubernetes Cluster"]
-    
-    K8s --> Runtime["Container Runtime<br/>containerd, Docker<br/>Podman, CRI-O"]
-    K8s --> Build["Image Build<br/>Docker, Buildah<br/>Skaffold, Kaniko"]
-    K8s --> Registry["Registry<br/>Harbor, Quay<br/>Chainguard Images"]
-    K8s --> Distros["K8s Distributions<br/>K3S, Rancher<br/>OpenShift"]
-    K8s --> Network["Networking<br/>Cilium, Calico<br/>Flannel"]
-    K8s --> Monitor["Observability<br/>Prometheus, Loki<br/>Tempo, Jaeger"]
-    K8s --> Mesh["Service Mesh<br/>Istio, Linkerd<br/>Kuma"]
-    
-    style K8s fill:#4CAF50,color:#fff
-    style Runtime fill:#2196F3,color:#fff
-    style Build fill:#FF9800,color:#fff
-    style Registry fill:#9C27B0,color:#fff
-    style Distros fill:#00BCD4,color:#fff
-    style Network fill:#F44336,color:#fff
-    style Monitor fill:#FFEB3B,color:#000
-    style Mesh fill:#E91E63,color:#fff
-```
+![Kubernetes Stack](./images/kubernetes-stack.svg)
 
-| Tool | Description | Type | Purpose |
+| 📦 Tool | Description | Type | Purpose |
 |------|-------------|------|---------|
 | [Buildah](https://buildah.io/) | Open source tool for building OCI-compatible container images without daemon | Open Source | Image building |
 | [containerd](https://containerd.io/) | Industry-standard container runtime with emphasis on simplicity and portability | Open Source | Container runtime |
@@ -259,7 +160,7 @@ graph TB
 
 ### Container Registry
 
-| Tool | Description | Type | Features |
+| 🗂️ Tool | Description | Type | Features |
 |------|-------------|------|----------|
 | [Harbor](https://goharbor.io/) | Open source registry with policies, role-based access, vulnerability scanning | Open Source | Enterprise registry |
 | [Quay](https://www.projectquay.io/) | Container image registry for building, organizing, distributing containers | Commercial | Image registry |
@@ -267,7 +168,7 @@ graph TB
 
 ### Supply Chain Security
 
-| Tool | Description | Type | Purpose |
+| 🔐 Tool | Description | Type | Purpose |
 |------|-------------|------|---------|
 | [Cosign](https://github.com/sigstore/cosign) | Tool for signing and verifying container images, part of Sigstore project | Open Source | Image signing |
 | [Syft](https://github.com/anchore/syft) | CLI tool and Go library for generating Software Bill of Materials from images | Open Source | SBOM generation |
@@ -279,30 +180,9 @@ graph TB
 
 ### CI/CD Pipeline Architecture
 
-```mermaid
-graph LR
-    A["Developer<br/>Commits"] --> B["SCM<br/>GitHub/GitLab"]
-    B --> C["Trigger"]
-    C --> D["CI Pipeline<br/>Build & Test"]
-    D --> E["Artifact<br/>Registry"]
-    E --> F["CD Pipeline<br/>Deploy"]
-    F --> G["Staging<br/>Environment"]
-    G --> H["Production<br/>Release"]
-    H --> I["Monitoring<br/>& Feedback"]
-    I -.-> A
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
-    style G fill:#fff9c4
-    style H fill:#f1f8e9
-    style I fill:#ede7f6
-```
+![CI/CD Pipeline](./images/cicd-pipeline.svg)
 
-| Tool | Description | Type | Best For |
+| 🔄 Tool | Description | Type | Best For |
 |------|-------------|------|----------|
 | [Argo CD](https://argoproj.github.io/cd/) | Declarative, GitOps continuous delivery tool for Kubernetes | Open Source | GitOps workflows |
 | [Argo Workflows](https://argoproj.github.io/workflows/) | Open source tools for Kubernetes to run workflows and do GitOps | Open Source | Workflow orchestration |
@@ -331,7 +211,7 @@ graph LR
 
 ## FinOps & Cost Management
 
-| Tool | Description | Type | Focus |
+| 💰 Tool | Description | Type | Focus |
 |------|-------------|------|-------|
 | [CloudHealth by VMware](https://cloudhealth.vmware.com/) | Unified platform for managing cloud cost, usage, security, and performance | Commercial | Multi-cloud management |
 | [Infracost](https://www.infracost.io/) | Open source tool showing cloud cost estimates for Terraform projects | Open Source | Terraform costs |
@@ -343,7 +223,7 @@ graph LR
 
 ## GitOps & Progressive Delivery
 
-| Tool | Description | Type | Specialization |
+| 🔀 Tool | Description | Type | Specialization |
 |------|-------------|------|-----------------|
 | [Argo CD](https://argoproj.github.io/cd/) | Declarative GitOps continuous delivery tool keeping cluster state in sync | Open Source | GitOps sync |
 | [Argo Rollouts](https://argoproj.github.io/rollouts/) | Advanced deployment capabilities with blue-green, canary, and progressive delivery | Open Source | Progressive deployments |
@@ -355,7 +235,7 @@ graph LR
 
 ## Incident Management
 
-| Tool | Description | Type | Features |
+| 🚨 Tool | Description | Type | Features |
 |------|-------------|------|----------|
 | [Grafana OnCall](https://grafana.com/products/oncall/) | Open source on-call management tool with alert routing and escalation | Open Source | On-call management |
 | [Incident.io](https://incident.io/)) | Modern incident management platform with Slack integration | Commercial | Incident coordination |
@@ -370,7 +250,7 @@ graph LR
 
 ## Internal Developer Platforms
 
-| Platform | Description | Type | Purpose |
+| 🏗️ Platform | Description | Type | Purpose |
 |----------|-------------|------|---------|
 | [Backstage](https://backstage.io/) | Open source framework for building developer portals unifying tooling | Open Source | Developer portal |
 | [Cortex](https://www.cortex.io/) | Internal Developer Portal improving service quality and ownership tracking | Commercial | Service catalog |
@@ -383,7 +263,7 @@ graph LR
 
 ## Messaging Queue
 
-| Tool | Description | Type | Use Case |
+| 📨 Tool | Description | Type | Use Case |
 |------|-------------|------|----------|
 | [ActiveMQ](http://activemq.apache.org/) | Most popular open source multi-protocol Java-based message broker | Open Source | Enterprise messaging |
 | [Beanstalkd](https://beanstalkd.github.io/) | Simple, fast work queue for reducing latency with async task processing | Open Source | Task queue |
@@ -402,31 +282,9 @@ graph LR
 
 ### Observability Stack
 
-```mermaid
-graph TB
-    Observability["Observability Platform"]
-    
-    Observability --> Metrics["Metrics Collection<br/>Prometheus, InfluxData<br/>Datadog, New Relic"]
-    Observability --> Logs["Log Aggregation<br/>ELK Stack, Loki<br/>Graylog, Splunk"]
-    Observability --> Traces["Distributed Tracing<br/>Jaeger, Tempo<br/>Datadog, New Relic"]
-    Observability --> Visualization["Visualization<br/>Grafana, Kibana<br/>Datadog Dashboard"]
-    Observability --> Alerting["Alerting & Incident<br/>Prometheus AlertManager<br/>Grafana OnCall"]
-    Observability --> APM["APM & Performance<br/>New Relic, Datadog<br/>Elastic APM"]
-    
-    Metrics --> Tools1["cAdvisor, Netdata<br/>collectd, Telegraf"]
-    Logs --> Tools2["Fluentd, Logstash<br/>Vector, Filebeat"]
-    Traces --> Tools3["OpenTelemetry<br/>Zipkin"]
-    
-    style Observability fill:#4CAF50,color:#fff
-    style Metrics fill:#2196F3,color:#fff
-    style Logs fill:#FF9800,color:#fff
-    style Traces fill:#9C27B0,color:#fff
-    style Visualization fill:#00BCD4,color:#fff
-    style Alerting fill:#F44336,color:#fff
-    style APM fill:#FFEB3B,color:#000
-```
+![Observability Stack](./images/observability-stack.svg)
 
-| Tool | Description | Type | Category |
+| 📊 Tool | Description | Type | Category |
 |------|-------------|------|----------|
 | [Alerta](https://github.com/alerta/alerta) | Accepts alerts from multiple sources with aggregation and correlation | Open Source | Alerting |
 | [Cachet](https://github.com/CachetHQ/Cachet) | Beautiful and powerful open source status page system | Open Source | Status pages |
@@ -458,7 +316,7 @@ graph TB
 
 ## Operating Systems
 
-| OS | Description | Type | Use Case |
+| 🐧 OS | Description | Type | Use Case |
 |----|-------------|------|----------|
 | [Alpine Linux](https://www.alpinelinux.org/) | Security-oriented, lightweight Linux distribution based on musl | Open Source | Container images |
 | [Bottlerocket](https://bottlerocket.dev/) | Free and open-source Linux OS from AWS purpose-built for containers | Open Source | Container hosts |
@@ -473,7 +331,7 @@ graph TB
 
 ## Programming Languages
 
-| Language | Description | Focus | DevOps Usage |
+| 💻 Language | Description | Focus | DevOps Usage |
 |----------|-------------|-------|--------------|
 | [Go](https://golang.org/) | Robust system-level language for network servers and distributed systems | Systems | Kubernetes, Docker, Terraform |
 | [Python](https://www.python.org/) | For websites, software, automation, data analysis, and visualization | Scripting | Automation, scripting |
@@ -487,33 +345,9 @@ graph TB
 
 ### DevSecOps Pipeline & Security Stack
 
-```mermaid
-graph TB
-    DevSecOps["DevSecOps Security Stack"]
-    
-    DevSecOps --> SAST["Static Analysis<br/>SonarQube, Checkov<br/>Snyk Code"]
-    DevSecOps --> DAST["Dynamic Analysis<br/>OWASP ZAP, Burp"]
-    DevSecOps --> Container["Container Security<br/>Trivy, Aqua<br/>Snyk Container"]
-    DevSecOps --> Secrets["Secrets Management<br/>Vault, Infisical<br/>Sealed Secrets"]
-    DevSecOps --> Runtime["Runtime Security<br/>Falco, AppArmor<br/>SELinux"]
-    DevSecOps --> Compliance["Compliance & Audit<br/>Checkov, OPA<br/>Kyverno"]
-    DevSecOps --> Supply["Supply Chain<br/>Cosign, Syft<br/>Sigstore, SBOM"]
-    
-    SAST --> CodeRepo["Code Repository"]
-    DAST --> Deploy["Running Apps"]
-    Container --> Registry["Container Registry"]
-    
-    style DevSecOps fill:#4CAF50,color:#fff
-    style SAST fill:#FF6B6B,color:#fff
-    style DAST fill:#FF8C42,color:#fff
-    style Container fill:#D32F2F,color:#fff
-    style Secrets fill:#7B1FA2,color:#fff
-    style Runtime fill:#E91E63,color:#fff
-    style Compliance fill:#1976D2,color:#fff
-    style Supply fill:#00897B,color:#fff
-```
+![DevSecOps Pipeline](./images/devsecops-pipeline.svg)
 
-| Tool | Description | Type | Focus Area |
+| 🔒 Tool | Description | Type | Focus Area |
 |------|-------------|------|------------|
 | [Aqua Security](https://www.aquasec.com/) | Cloud-native security platform for containers, serverless, VMs | Commercial | Container security |
 | [Checkov](https://www.checkov.io/) | Static code analysis tool for IaC security and compliance | Open Source | IaC scanning |
@@ -528,7 +362,7 @@ graph TB
 
 ## Service Mesh & Networking
 
-| Tool | Description | Type | Architecture |
+| 🌐 Tool | Description | Type | Architecture |
 |------|-------------|------|--------------|
 | [Cilium](https://cilium.io/) | CNCF graduated project providing eBPF-based networking and security | Open Source | Network security |
 | [Istio](https://istio.io/) | Open source service mesh layering transparently for traffic management | Open Source | Service mesh |
@@ -540,7 +374,7 @@ graph TB
 
 ## Source Control Management
 
-| Platform | Description | Type | Features |
+| 📚 Platform | Description | Type | Features |
 |----------|-------------|------|----------|
 | [Bitbucket](https://bitbucket.org/product/) | Git-based code hosting tool with Jira and Trello integration | Commercial | Team collaboration |
 | [Forgejo](https://forgejo.org/) | Self-hosted lightweight code hosting, community fork of Gitea | Open Source | Self-hosted git |

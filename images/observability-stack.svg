@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="500" fill="#f5f5f5"/>
+
+  <!-- Title -->
+  <text x="500" y="35" font-size="26" font-weight="bold" text-anchor="middle" fill="#333">Observability Stack (Three Pillars)</text>
+
+  <!-- Central Integration Hub -->
+  <circle cx="500" cy="250" r="50" fill="#4CAF50" opacity="0.9"/>
+  <text x="500" y="245" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Integration</text>
+  <text x="500" y="265" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Hub</text>
+
+  <!-- Pillar 1: Metrics -->
+  <g>
+    <!-- Box -->
+    <rect x="50" y="100" width="200" height="300" fill="#2196F3" opacity="0.85" rx="8"/>
+
+    <!-- Title -->
+    <text x="150" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="white">📊 Metrics</text>
+
+    <!-- Items -->
+    <rect x="70" y="155" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="150" y="180" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Prometheus</text>
+
+    <rect x="70" y="205" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="150" y="230" font-size="12" font-weight="bold" text-anchor="middle" fill="white">InfluxData</text>
+
+    <rect x="70" y="255" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="150" y="280" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Grafana</text>
+
+    <rect x="70" y="305" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="150" y="330" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Datadog</text>
+
+    <!-- Connection -->
+    <line x1="250" y1="250" x2="450" y2="250" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Pillar 2: Logs -->
+  <g>
+    <!-- Box -->
+    <rect x="400" y="100" width="200" height="300" fill="#FF9800" opacity="0.85" rx="8"/>
+
+    <!-- Title -->
+    <text x="500" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="white">📝 Logs</text>
+
+    <!-- Items -->
+    <rect x="420" y="155" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="500" y="180" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Elasticsearch</text>
+
+    <rect x="420" y="205" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="500" y="230" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Grafana Loki</text>
+
+    <rect x="420" y="255" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="500" y="280" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Graylog</text>
+
+    <rect x="420" y="305" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="500" y="330" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Fluentd</text>
+
+    <!-- Connection -->
+    <line x1="550" y1="250" x2="450" y2="250" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Pillar 3: Traces -->
+  <g>
+    <!-- Box -->
+    <rect x="750" y="100" width="200" height="300" fill="#9C27B0" opacity="0.85" rx="8"/>
+
+    <!-- Title -->
+    <text x="850" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="white">🔗 Traces</text>
+
+    <!-- Items -->
+    <rect x="770" y="155" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="850" y="180" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Jaeger</text>
+
+    <rect x="770" y="205" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="850" y="230" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Grafana Tempo</text>
+
+    <rect x="770" y="255" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="850" y="280" font-size="12" font-weight="bold" text-anchor="middle" fill="white">Zipkin</text>
+
+    <rect x="770" y="305" width="160" height="40" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="850" y="330" font-size="12" font-weight="bold" text-anchor="middle" fill="white">OpenTelemetry</text>
+
+    <!-- Connection -->
+    <line x1="750" y1="250" x2="550" y2="250" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Bottom outputs -->
+  <rect x="100" y="420" width="700" height="60" fill="#FFEB3B" opacity="0.9" rx="8"/>
+  <text x="450" y="445" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">📊 Visualization & Alerting: Grafana • Kibana • Dashboards</text>
+  <text x="450" y="465" font-size="12" text-anchor="middle" fill="#333">⚠️ Alert Management: AlertManager • OpsGenie • PagerDuty • Incident.io</text>
+</svg>
