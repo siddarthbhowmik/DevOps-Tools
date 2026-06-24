@@ -14,52 +14,20 @@ DevOps is the practice of operations and development engineers participating tog
 
 ### DevOps Workflow
 
-```mermaid
-graph LR
-    A[Plan] --> B[Code]
-    B --> C[Build]
-    C --> D[Test]
-    D --> E[Release]
-    E --> F[Deploy]
-    F --> G[Operate]
-    G --> H[Monitor]
-    H --> A
-    
-    style A fill:#e1f5ff
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#f1f8e9
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
-    style G fill:#ede7f6
-    style H fill:#fff9c4
-```
+The DevOps workflow is a continuous cycle:
+**Plan → Code → Build → Test → Release → Deploy → Operate → Monitor → Feedback**
 
 ### Tool Categories & DevOps Stack
 
-```mermaid
-graph TD
-    DevOps["DevOps Ecosystem"]
-    
-    DevOps --> SCM["Source Control<br/>GitHub, GitLab, Gitea"]
-    DevOps --> CI["CI/CD Pipeline<br/>Jenkins, GitLab CI, GitHub Actions"]
-    DevOps --> IaC["Infrastructure as Code<br/>Terraform, Pulumi, Ansible"]
-    DevOps --> Container["Containerization<br/>Docker, Podman, Buildah"]
-    DevOps --> Orchestration["Orchestration<br/>Kubernetes, Nomad, K3S"]
-    DevOps --> Monitor["Monitoring & Observability<br/>Prometheus, Grafana, ELK"]
-    DevOps --> Security["Security & Compliance<br/>Vault, Snyk, Trivy"]
-    DevOps --> Cost["Cost Management<br/>Kubecost, Infracost"]
-    
-    style DevOps fill:#4CAF50,color:#fff
-    style SCM fill:#2196F3,color:#fff
-    style CI fill:#FF9800,color:#fff
-    style IaC fill:#9C27B0,color:#fff
-    style Container fill:#00BCD4,color:#fff
-    style Orchestration fill:#F44336,color:#fff
-    style Monitor fill:#FFEB3B,color:#000
-    style Security fill:#E91E63,color:#fff
-    style Cost fill:#673AB7,color:#fff
-```
+DevOps tools are organized into key categories:
+- **Source Control**: GitHub, GitLab, Gitea
+- **CI/CD Pipeline**: Jenkins, GitLab CI, GitHub Actions
+- **Infrastructure as Code**: Terraform, Pulumi, Ansible
+- **Containerization**: Docker, Podman, Buildah
+- **Orchestration**: Kubernetes, Nomad, K3S
+- **Monitoring & Observability**: Prometheus, Grafana, ELK
+- **Security & Compliance**: Vault, Snyk, Trivy
+- **Cost Management**: Kubecost, Infracost
 
 ---
 
@@ -69,54 +37,16 @@ Below are the indexes that list the tools available as per their work areas.
 
 ### Tool Deployment Models
 
-```mermaid
-graph TB
-    Tools["DevOps Tools"]
-    
-    Tools --> Cloud["Cloud-Managed"]
-    Cloud --> CM1["GitHub, GitLab<br/>CircleCI, Datadog"]
-    
-    Tools --> SelfHosted["Self-Hosted"]
-    SelfHosted --> SH1["Jenkins, Grafana<br/>Prometheus, Gitea"]
-    
-    Tools --> Hybrid["Hybrid/Both"]
-    Hybrid --> H1["Gitlab CI, Jira<br/>Splunk, New Relic"]
-    
-    Tools --> OpenSource["Open Source"]
-    OpenSource --> OS1["Kubernetes, Docker<br/>Prometheus, Grafana"]
-    
-    style Tools fill:#4CAF50,color:#fff
-    style Cloud fill:#2196F3,color:#fff
-    style SelfHosted fill:#FF9800,color:#fff
-    style Hybrid fill:#9C27B0,color:#fff
-    style OpenSource fill:#00BCD4,color:#fff
-```
+The tools are categorized by their deployment and licensing models to help you choose the right fit:
 
-- [Contents](#contents)
-  - [API Gateway](#api-gateway)
-  - [Automation Platforms](#automation-platforms)
-  - [Cloud Platforms](#cloud-platforms)
-  - [Containers Platforms](#containers-platforms)
-  - [Continuous Integration and Delivery](#continuous-integration-and-delivery)
-  - [FinOps & Cost Management](#finops--cost-management)
-  - [GitOps & Progressive Delivery](#gitops--progressive-delivery)
-  - [Incident Management](#incident-management)
-  - [Internal Developer Platforms](#internal-developer-platforms)
-  - [Messaging Queue](#messaging-queue)
-  - [Monitoring & Observability](#monitoring--observability)
-  - [Operating Systems](#operating-systems)
-  - [Programming Languages](#programming-languages)
-  - [Security & Compliance (DevSecOps)](#security--compliance-devsecops)
-  - [Service Mesh & Networking](#service-mesh--networking)
-  - [Source Control Management](#source-control-management)
-
----
-
-## Contents
+- **Cloud-Managed**: Fully hosted solutions with automatic updates (GitHub, GitLab, CircleCI)
+- **Self-Hosted**: Run on your own infrastructure for maximum control (Jenkins, Grafana, Prometheus)
+- **Hybrid**: Available in both cloud and self-hosted options (Gitlab CI, New Relic, Splunk)
+- **Open Source**: Free to use and modify (Kubernetes, Docker, Prometheus, Grafana)
 
 
 
-## API Gateway
+## 🔗 API Gateway
 
 | Tool | Description | Type | Status |
 |------|-------------|------|--------|
@@ -134,7 +64,7 @@ graph TB
 
 ---
 
-## Automation Platforms
+## 🛠️ Automation Platforms
 
 ### Infrastructure as Code & Orchestration
 
@@ -190,7 +120,7 @@ graph TB
 
 ---
 
-## Cloud Platforms
+## ☁️ Cloud Platforms
 
 | Provider | Description | Type | Coverage |
 |----------|-------------|------|----------|
@@ -213,31 +143,18 @@ graph TB
 
 ---
 
-## Containers Platforms
+## 📦 Containers Platforms
 
 ### Container & Kubernetes Ecosystem
 
-```mermaid
-graph TB
-    K8s["Kubernetes Cluster"]
-    
-    K8s --> Runtime["Container Runtime<br/>containerd, Docker<br/>Podman, CRI-O"]
-    K8s --> Build["Image Build<br/>Docker, Buildah<br/>Skaffold, Kaniko"]
-    K8s --> Registry["Registry<br/>Harbor, Quay<br/>Chainguard Images"]
-    K8s --> Distros["K8s Distributions<br/>K3S, Rancher<br/>OpenShift"]
-    K8s --> Network["Networking<br/>Cilium, Calico<br/>Flannel"]
-    K8s --> Monitor["Observability<br/>Prometheus, Loki<br/>Tempo, Jaeger"]
-    K8s --> Mesh["Service Mesh<br/>Istio, Linkerd<br/>Kuma"]
-    
-    style K8s fill:#4CAF50,color:#fff
-    style Runtime fill:#2196F3,color:#fff
-    style Build fill:#FF9800,color:#fff
-    style Registry fill:#9C27B0,color:#fff
-    style Distros fill:#00BCD4,color:#fff
-    style Network fill:#F44336,color:#fff
-    style Monitor fill:#FFEB3B,color:#000
-    style Mesh fill:#E91E63,color:#fff
-```
+Kubernetes cluster consists of multiple components working together:
+- **Container Runtime**: containerd, Docker, Podman, CRI-O
+- **Image Build**: Docker, Buildah, Skaffold, Kaniko
+- **Registry**: Harbor, Quay, Chainguard Images
+- **Distributions**: K3S, Rancher, OpenShift
+- **Networking**: Cilium, Calico, Flannel
+- **Observability**: Prometheus, Loki, Tempo, Jaeger
+- **Service Mesh**: Istio, Linkerd, Kuma
 
 | Tool | Description | Type | Purpose |
 |------|-------------|------|---------|
@@ -257,7 +174,7 @@ graph TB
 | [Rancher](https://rancher.com/) | Open source container management platform for organizations | Open Source | K8s management |
 | [Skaffold](https://skaffold.dev/) | Command-line tool handling workflow for building, pushing, deploying to Kubernetes | Open Source | K8s development |
 
-### Container Registry
+### 🗂️ Container Registry
 
 | Tool | Description | Type | Features |
 |------|-------------|------|----------|
@@ -265,7 +182,7 @@ graph TB
 | [Quay](https://www.projectquay.io/) | Container image registry for building, organizing, distributing containers | Commercial | Image registry |
 | [Chainguard Images](https://www.chainguard.dev/chainguard-images) | Minimal, hardened container images designed to reduce supply chain attack surface | Commercial | Secure images |
 
-### Supply Chain Security
+### 🔐 Supply Chain Security
 
 | Tool | Description | Type | Purpose |
 |------|-------------|------|---------|
@@ -275,32 +192,12 @@ graph TB
 
 ---
 
-## Continuous Integration and Delivery
+## 🔄 Continuous Integration and Delivery
 
 ### CI/CD Pipeline Architecture
 
-```mermaid
-graph LR
-    A["Developer<br/>Commits"] --> B["SCM<br/>GitHub/GitLab"]
-    B --> C["Trigger"]
-    C --> D["CI Pipeline<br/>Build & Test"]
-    D --> E["Artifact<br/>Registry"]
-    E --> F["CD Pipeline<br/>Deploy"]
-    F --> G["Staging<br/>Environment"]
-    G --> H["Production<br/>Release"]
-    H --> I["Monitoring<br/>& Feedback"]
-    I -.-> A
-    
-    style A fill:#e3f2fd
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
-    style F fill:#e0f2f1
-    style G fill:#fff9c4
-    style H fill:#f1f8e9
-    style I fill:#ede7f6
-```
+The CI/CD pipeline follows this flow:
+**Developer Commits → SCM → Build → Test → Artifact Registry → Deploy → Staging → Production → Monitor & Feedback**
 
 | Tool | Description | Type | Best For |
 |------|-------------|------|----------|
@@ -329,7 +226,7 @@ graph LR
 
 ---
 
-## FinOps & Cost Management
+## 💰 FinOps & Cost Management
 
 | Tool | Description | Type | Focus |
 |------|-------------|------|-------|
@@ -341,7 +238,7 @@ graph LR
 
 ---
 
-## GitOps & Progressive Delivery
+## 🔀 GitOps & Progressive Delivery
 
 | Tool | Description | Type | Specialization |
 |------|-------------|------|-----------------|
@@ -353,7 +250,7 @@ graph LR
 
 ---
 
-## Incident Management
+## 🚨 Incident Management
 
 | Tool | Description | Type | Features |
 |------|-------------|------|----------|
@@ -368,7 +265,7 @@ graph LR
 
 ---
 
-## Internal Developer Platforms
+## 🏗️ Internal Developer Platforms
 
 | Platform | Description | Type | Purpose |
 |----------|-------------|------|---------|
@@ -381,7 +278,7 @@ graph LR
 
 ---
 
-## Messaging Queue
+## 📨 Messaging Queue
 
 | Tool | Description | Type | Use Case |
 |------|-------------|------|----------|
@@ -398,33 +295,16 @@ graph LR
 
 ---
 
-## Monitoring & Observability
+## 📊 Monitoring & Observability
 
 ### Observability Stack
 
-```mermaid
-graph TB
-    Observability["Observability Platform"]
-    
-    Observability --> Metrics["Metrics Collection<br/>Prometheus, InfluxData<br/>Datadog, New Relic"]
-    Observability --> Logs["Log Aggregation<br/>ELK Stack, Loki<br/>Graylog, Splunk"]
-    Observability --> Traces["Distributed Tracing<br/>Jaeger, Tempo<br/>Datadog, New Relic"]
-    Observability --> Visualization["Visualization<br/>Grafana, Kibana<br/>Datadog Dashboard"]
-    Observability --> Alerting["Alerting & Incident<br/>Prometheus AlertManager<br/>Grafana OnCall"]
-    Observability --> APM["APM & Performance<br/>New Relic, Datadog<br/>Elastic APM"]
-    
-    Metrics --> Tools1["cAdvisor, Netdata<br/>collectd, Telegraf"]
-    Logs --> Tools2["Fluentd, Logstash<br/>Vector, Filebeat"]
-    Traces --> Tools3["OpenTelemetry<br/>Zipkin"]
-    
-    style Observability fill:#4CAF50,color:#fff
-    style Metrics fill:#2196F3,color:#fff
-    style Logs fill:#FF9800,color:#fff
-    style Traces fill:#9C27B0,color:#fff
-    style Visualization fill:#00BCD4,color:#fff
-    style Alerting fill:#F44336,color:#fff
-    style APM fill:#FFEB3B,color:#000
-```
+The three pillars of observability work together for complete visibility:
+- **Metrics**: Prometheus, InfluxData, Datadog, New Relic
+- **Logs**: ELK Stack, Grafana Loki, Graylog, Splunk
+- **Traces**: Jaeger, Grafana Tempo, Datadog, OpenTelemetry
+
+These are then visualized and alerted through Grafana, Kibana, and incident management tools.
 
 | Tool | Description | Type | Category |
 |------|-------------|------|----------|
@@ -456,7 +336,7 @@ graph TB
 
 ---
 
-## Operating Systems
+## 🐧 Operating Systems
 
 | OS | Description | Type | Use Case |
 |----|-------------|------|----------|
@@ -471,7 +351,7 @@ graph TB
 
 ---
 
-## Programming Languages
+## 💻 Programming Languages
 
 | Language | Description | Focus | DevOps Usage |
 |----------|-------------|-------|--------------|
@@ -483,35 +363,15 @@ graph TB
 
 ---
 
-## Security & Compliance (DevSecOps)
+## 🔒 Security & Compliance (DevSecOps)
 
 ### DevSecOps Pipeline & Security Stack
 
-```mermaid
-graph TB
-    DevSecOps["DevSecOps Security Stack"]
-    
-    DevSecOps --> SAST["Static Analysis<br/>SonarQube, Checkov<br/>Snyk Code"]
-    DevSecOps --> DAST["Dynamic Analysis<br/>OWASP ZAP, Burp"]
-    DevSecOps --> Container["Container Security<br/>Trivy, Aqua<br/>Snyk Container"]
-    DevSecOps --> Secrets["Secrets Management<br/>Vault, Infisical<br/>Sealed Secrets"]
-    DevSecOps --> Runtime["Runtime Security<br/>Falco, AppArmor<br/>SELinux"]
-    DevSecOps --> Compliance["Compliance & Audit<br/>Checkov, OPA<br/>Kyverno"]
-    DevSecOps --> Supply["Supply Chain<br/>Cosign, Syft<br/>Sigstore, SBOM"]
-    
-    SAST --> CodeRepo["Code Repository"]
-    DAST --> Deploy["Running Apps"]
-    Container --> Registry["Container Registry"]
-    
-    style DevSecOps fill:#4CAF50,color:#fff
-    style SAST fill:#FF6B6B,color:#fff
-    style DAST fill:#FF8C42,color:#fff
-    style Container fill:#D32F2F,color:#fff
-    style Secrets fill:#7B1FA2,color:#fff
-    style Runtime fill:#E91E63,color:#fff
-    style Compliance fill:#1976D2,color:#fff
-    style Supply fill:#00897B,color:#fff
-```
+DevSecOps spans the entire software development lifecycle with multiple security layers:
+- **Development**: SAST (SonarQube, Checkov), Dependency scanning, Secrets detection
+- **Build & Push**: Container scanning, Image signing & verification, SBOM generation
+- **Deployment**: IaC scanning, Policy as Code, Network security
+- **Runtime**: Container runtime security, Secrets management, Anomaly detection, Threat response
 
 | Tool | Description | Type | Focus Area |
 |------|-------------|------|------------|
@@ -526,7 +386,7 @@ graph TB
 
 ---
 
-## Service Mesh & Networking
+## 🌐 Service Mesh & Networking
 
 | Tool | Description | Type | Architecture |
 |------|-------------|------|--------------|
@@ -538,7 +398,7 @@ graph TB
 
 ---
 
-## Source Control Management
+## 📚 Source Control Management
 
 | Platform | Description | Type | Features |
 |----------|-------------|------|----------|
