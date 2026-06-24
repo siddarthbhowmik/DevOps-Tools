@@ -20,16 +20,16 @@ Below are the indexes that list the tools available as per their work areas.
   - [Cloud Platforms](#cloud-platforms)
   - [Containers Platforms](#containers-platforms)
   - [Continuous Integration and Delivery](#continuous-integration-and-delivery)
-  - [FinOps & Cost Management](#finops--cost-management) *(New)*
-  - [GitOps & Progressive Delivery](#gitops--progressive-delivery) *(New)*
+  - [FinOps & Cost Management](#finops--cost-management)
+  - [GitOps & Progressive Delivery](#gitops--progressive-delivery)
   - [Incident Management](#incident-management)
-  - [Internal Developer Platforms](#internal-developer-platforms) *(New)*
+  - [Internal Developer Platforms](#internal-developer-platforms)
   - [Messaging Queue](#messaging-queue)
   - [Monitoring & Observability](#monitoring--observability)
   - [Operating Systems](#operating-systems)
   - [Programming Languages](#programming-languages)
-  - [Security & Compliance (DevSecOps)](#security--compliance-devsecops) *(New)*
-  - [Service Mesh & Networking](#service-mesh--networking) *(New)*
+  - [Security & Compliance (DevSecOps)](#security--compliance-devsecops)
+  - [Service Mesh & Networking](#service-mesh--networking)
   - [Source Control Management](#source-control-management)
 
 ---
@@ -154,7 +154,7 @@ Below are the indexes that list the tools available as per their work areas.
 
 ---
 
-## FinOps & Cost Management *(New)*
+## FinOps & Cost Management
 
 - [CloudHealth by VMware](https://cloudhealth.vmware.com/) - CloudHealth provides a unified platform for managing cloud cost, usage, security, and performance across AWS, Azure, and GCP.
 - [Infracost](https://www.infracost.io/) - Infracost is an open source tool that shows cloud cost estimates for Terraform projects directly in pull requests.
@@ -164,7 +164,7 @@ Below are the indexes that list the tools available as per their work areas.
 
 ---
 
-## GitOps & Progressive Delivery *(New)*
+## GitOps & Progressive Delivery
 
 - [Argo CD](https://argoproj.github.io/cd/) - Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes that keeps cluster state in sync with a Git repository.
 - [Argo Rollouts](https://argoproj.github.io/rollouts/) - Argo Rollouts provides advanced deployment capabilities such as blue-green, canary, canary analysis, and progressive delivery to Kubernetes.
@@ -187,7 +187,7 @@ Below are the indexes that list the tools available as per their work areas.
 
 ---
 
-## Internal Developer Platforms *(New)*
+## Internal Developer Platforms
 
 Internal Developer Platforms (IDPs) provide self-service infrastructure and tooling to development teams, reducing cognitive load and standardizing workflows.
 
@@ -268,7 +268,7 @@ Internal Developer Platforms (IDPs) provide self-service infrastructure and tool
 
 ---
 
-## Security & Compliance (DevSecOps) *(New)*
+## Security & Compliance (DevSecOps)
 
 DevSecOps integrates security practices throughout the DevOps lifecycle.
 
@@ -283,7 +283,7 @@ DevSecOps integrates security practices throughout the DevOps lifecycle.
 
 ---
 
-## Service Mesh & Networking *(New)*
+## Service Mesh & Networking
 
 - [Cilium](https://cilium.io/) - Cilium is a CNCF graduated project that provides eBPF-based networking, security, and observability for Kubernetes environments, replacing traditional iptables-based networking.
 - [Istio](https://istio.io/) - Istio is an open source service mesh that layers transparently onto existing distributed applications, providing traffic management, telemetry, and security policy enforcement.
